@@ -1,0 +1,6 @@
+---
+- hosts: "{{ taget | default('localhost') }}"
+  become: yes
+  roles:
+    - nodejs
+    - codedeploy
