@@ -1,5 +1,6 @@
 ---
 # tasks file for helloworld
+
 - name: Copying the application file
   copy:
     src: helloworld.js
@@ -15,7 +16,7 @@
     dest: /etc/init/helloworld.conf
     owner: root
     group: root
-    mode: 644
+    mode: 0644
 
 - name: Starting the HelloWorld node service
   service:
